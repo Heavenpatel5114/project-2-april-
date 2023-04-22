@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+  <div class="input-fields">
+    <input type="text" id="name" placeholder="Name">
+    <input type="text" id="age" placeholder="Age">
+    <select id="profession">
+      <option value="" selected disabled>Select profession</option>
+      <option value="developer">Developer</option>
+      <option value="admin">Admin</option>
+    </select>
+    <button onclick="addUser()">Add User</button>
+  </div>
+  <div class="cards-container"></div>
+  <div class="filter-container">
+    <select id="filter-profession">
+      <option value="" selected disabled>Select profession to filter</option>
+      <option value="developer">Developer</option>
+      <option value="admin">Admin</option>
+    </select>
+    <button onclick="filterCards()">Filter</button>
+  </div>
+</div>
+<script src="node.js"></script>
+
+</body>
+</html>
